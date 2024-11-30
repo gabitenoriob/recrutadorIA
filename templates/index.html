@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Seleção de Candidatos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Seleção de Candidatos</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="fileInput">Adicionar Arquivos:</label>
+            <input type="file" id="fileInput" name="files" multiple accept=".pdf, .docx, .xlsx, .xls, .csv">
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <textarea id="resultBox" placeholder="Os resultados aparecerão aqui..." readonly></textarea>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
